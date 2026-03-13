@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2 </title>
+    <style>
+        /* Configurações Globais */
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        /* Cabeçalho */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .gray-block {
+            background-color: #5c0b0b;
+            width: 30%;
+            height: 40px;
+        }
+
+        .title-group {
+            text-align: center;
+        }
+
+        .title-group h1 {
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .title-group h2 {
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: normal;
+        }
+
+        /* Container Principal */
+        .main-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* Colunas */
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            flex: 1;
+        }
+
+        /* Estilo dos Cards */
+        .card {
+            border-radius:12px 28px;
+            border: 1px solid #000;
+            padding: 15px;
+            background: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+            border-color: #5c0b0b;
+        }
+
+        .card h3 {
+            font-size: 14px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .card p {
+            font-size: 12px;
+            line-height: 1.4;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        .card ul {
+            list-style-type: circle;
+            padding-left: 10px;
+            font-size: 12px;
+        }
+
+        .card a {
+            color: blue;
+            font-size: 12px;
+        }
+        .card-img {
+            max-width: 100%; /* Impede que a imagem fique maior que a largura do card */
+            height: auto;    /* Mantém a proporção (não achata a imagem) */
+            display: block;  /* Evita espaços em branco estranhos na base */
+            margin: 10px auto; /* Centraliza e dá um espaçamento */
+            border-radius: 8px; /* Arredonda levemente os cantos da imagem */
+        }
+        /* Ajustes específicos */
+        .card-3 {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="gray-block"></div>
+        <div class="title-group">
+            <h1>Hollywood Action</h1>
+            <h2>Filmes em Ascensão</h2>
+        </div>
+        <div class="gray-block"></div>
+    </header>
+
+    <div class="main-container">
+        <div class="column">
+            <div class="card">
+                <h3>Filmes de Ação em Cartaz</h3>
+                <p>Confira os filmes de ação de Hollywood que estão atualmente nos cinemas. Grandes produções, cenas eletrizantes e histórias cheias de adrenalina para quem gosta de emoção na tela grande.</p>
+                <ul>
+                    <li>Pânico 7</li>
+                    <li>Cara de um, Focinho de Outro</li>
+                    <li>O Agente Secreto</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Próximos Lançamentos 🚀</h3>
+                    <h3>Ação que Está Chegando</h3>
+                <p>Fique por dentro dos próximos lançamentos de ação de Hollywood. Novas produções com grandes elencos, efeitos impressionantes e histórias que prometem movimentar as telonas.</p>
+                <p>Os próximos meses prometem trazer perseguições eletrizantes, batalhas épicas e heróis enfrentando desafios ainda maiores. Com diretores renomados e estrelas do cinema internacional, esses filmes chegam para conquistar o público e dominar as bilheterias. Se você é fã de adrenalina, emoção e cenas de tirar o fôlego, os próximos lançamentos de Hollywood certamente não vão decepcionar.</p>
+                <a href="https://www.leituradopovo.com.br/noticia/72080/cinco-filmes-chegam-aos-cinemas-e-prometem-movimentar-as-telonas">Cinco filmes chegam aos cinemas e prometem movimentar as telonas.</a>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card card-3">
+                <h3>Destaques do Momento ⭐</h3>
+                    <h3>Os Mais Comentados</h3>
+                <p>Descubra os filmes de Hollywood que estão dominando as conversas entre fãs e críticos.</p>
+                <p>Produções que se destacam pela intensidade, grandes atuações e cenas inesquecíveis.</p>
+                <a href="https://g1.globo.com/pop-arte/cinema/">POP & ARTE</a>
+            </div>
+
+            <div class="card">
+                <h3>Era uma Vez HollyWood...🎬</h3>
+                <p>Era uma vez Hollywood, uma cidade onde os sonhos brilhavam mais forte que as luzes dos letreiros. Entre estúdios antigos e ruas cheias de histórias, jovens artistas chegavam todos os dias carregando roteiros, guitarras e esperanças. Alguns buscavam fama, outros apenas queriam contar uma boa história.</p>
+                <p>E, em meio a tantas tentativas, fracassos e aplausos, Hollywood continuava fazendo o que sempre fez: transformar pessoas comuns em lendas — e lembrar que, por trás de cada estrela na calçada, existiu alguém que um dia também começou dizendo: “Era uma vez…”</p>
+                <p>🎬⭐</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSH1-PdUfofYPlL3ZXq2i30FYSsgMImFHZYQ&s"alt="Momentos de Hollywood" class="card-img">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
